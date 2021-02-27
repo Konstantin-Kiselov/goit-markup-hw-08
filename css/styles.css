@@ -177,7 +177,7 @@ body {
 }
 
 .address-contacts {
-  color: var(--adress-white-color);
+  color: var(--address-color);
   line-height: 1.71;
 }
 /* ============ END FOOTER ========== */
