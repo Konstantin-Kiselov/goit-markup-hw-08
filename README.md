@@ -1,3 +1,3 @@
 # goit-markup-hw-03
 Homework #3
-https://konstantin-kiselov.github.io/goit-markup-hw-03/
+# https://konstantin-kiselov.github.io/goit-markup-hw-03/
