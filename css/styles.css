@@ -11,6 +11,7 @@
   --accent-color: #2196f3;
   --address-color: rgba(255, 255, 255, 0.6);
   --bg-dark-color: #2f303a;
+  --bg-gradient-color: rgba(47, 48, 58, 0.4);
   --primary-bg-color: #ffffff;
   --white-color: #ffffff;
   --filter-btn: #f5f4fa;
@@ -161,7 +162,6 @@ img {
 
 /* ============ HERO ========== */
 .hero {
-  background-color: var(--bg-dark-color);
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -178,6 +178,20 @@ img {
   color: var(--white-color);
   margin: 0 auto;
   margin-bottom: 30px;
+}
+
+.bg-hero {
+  max-width: 1600px;
+  min-height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--bg-dark-color);
+  background-image: linear-gradient(
+      to right,
+      var(--bg-gradient-color),
+      var(--bg-gradient-color)
+    ),
+    url("../images/bg-hero.jpg");
 }
 
 .button {
@@ -236,16 +250,51 @@ img {
 .features-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  /* margin-left: -30px;
+  margin-top: -30px; */
+  margin: -15px;
 }
 
 .features-list-item {
-  margin-left: 30px;
-  margin-top: 30px;
+  /* margin-left: 30px;
+  margin-top: 30px; */
+  margin: 15px;
   flex-basis: calc((100% / 4 - 30px));
 }
 
+.features-list-item::before {
+  content: "";
+  display: block;
+  /* height: calc((100%-120px) / 4); */
+  padding: 60px 135px;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px;
+
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+
+  /* outline: 1px solid green; */
+}
+
+.antenna::before {
+  background-image: url("../images/main/features/antenna.svg");
+}
+
+.astronaut::before {
+  background-image: url("../images/main/features/astronaut.svg");
+}
+
+.clock::before {
+  background-image: url("../images/main/features/clock.svg");
+}
+
+.diagram::before {
+  background-image: url("../images/main/features/diagram.svg");
+}
 /* ============ END FEATURES ========== */
 
 /* ============ WORK ========== */
@@ -258,15 +307,17 @@ img {
 .work-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  /* margin-left: -30px;
+  margin-top: -30px; */
+  margin: -15px;
 
   /* justify-content: space-between; */
 }
 
 .work-list-item {
-  margin-left: 30px;
-  margin-top: 30px;
+  /* margin-left: 30px;
+  margin-top: 30px; */
+  margin: 15px;
   flex-basis: calc((100% / 3 - 30px));
 }
 
@@ -282,16 +333,21 @@ img {
 .team-list {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
-  margin-top: -30px;
+  margin: -15px;
+  /* margin-left: -30px;
+  margin-top: -30px; */
   /* justify-content: space-between; */
 }
 
 .team-list-item {
-  margin-left: 30px;
-  margin-top: 30px;
-  flex-basis: calc((100% / 4) - 30px);
+  /* margin-left: 30px;
+  margin-top: 30px; */
+  margin: 15px;
+  flex-basis: calc(100% / 4 - 30px);
+
+  outline: 1px solid green;
 }
+
 .thumb-img {
   max-width: 100%;
 }
