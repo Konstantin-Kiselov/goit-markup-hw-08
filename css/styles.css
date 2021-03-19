@@ -639,6 +639,10 @@ img {
   cursor: pointer;
 }
 
+.modal-close-icon {
+  fill: #000000;
+}
+
 .is-hidden {
   opacity: 0;
   visibility: hidden;
