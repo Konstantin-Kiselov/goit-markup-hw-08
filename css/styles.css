@@ -798,7 +798,7 @@ img {
   background-size: cover;
   background-position: center; */
   background-color: #fff;
-  border: 2px solid #212121;
+  border: 2px solid var(--title-text-color);
   border-radius: 2px;
 
   transition: background-color 250ms var(--time-function),
@@ -806,7 +806,13 @@ img {
 }
 
 .user-policy:focus + .modal-icon-policy::before {
-  outline: 1px solid #000;
+  box-shadow: 0 0 0 1px var(--title-text-color);
+  border-radius: 2px;
+}
+
+.user-policy:checked:focus + .modal-icon-policy::before {
+  box-shadow: 0 0 0 1px var(--accent-color);
+  border-radius: 2px;
 }
 
 .user-policy:checked + .modal-icon-policy::before {
