@@ -795,18 +795,24 @@ img {
   border: none;
   cursor: pointer;
   margin-right: 8px;
-  background-image: url("../images/main/svg/term-off.svg");
+  /* background-image: url("../images/main/svg/term-off.svg");
   background-size: cover;
-  background-position: center;
-  transition: background-color 250ms var(--time-function);
+  background-position: center; */
+  background-color: #fff;
+  border: 2px solid #212121;
+  border-radius: 2px;
+
+  transition: background-color 250ms var(--time-function),
+    border 250ms var(--time-function);
 }
 
 .user-policy:checked + .modal-icon-policy::before {
   background-color: var(--accent-color);
   background-image: url("../images/main/svg/term-on.svg");
   background-position: center;
-  background-size: cover;
-  border: none;
+  background-size: contain;
+  background-origin: border-box;
+  border: 2px solid var(--accent-color);
   border-radius: 2px;
   outline: none;
   fill: #fff;
