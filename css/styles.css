@@ -544,6 +544,7 @@ img {
 
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 
 .footer-logo {
@@ -566,7 +567,6 @@ img {
 }
 
 .social-footer {
-  padding-top: 12px;
   margin-left: 70px;
   min-width: 206px;
 }
@@ -603,7 +603,6 @@ img {
 
 .subscriber {
   margin-left: auto;
-  padding-top: 12px;
 }
 
 .subscriber-form {
@@ -705,6 +704,7 @@ img {
 .modal-icon-wrapper {
   /* width: 100%; */
   position: relative;
+  display: block;
   margin-bottom: 10px;
   margin-top: 4px;
 }
@@ -792,7 +792,6 @@ img {
   content: "";
   width: 16px;
   height: 15px;
-  border: none;
   cursor: pointer;
   margin-right: 8px;
   /* background-image: url("../images/main/svg/term-off.svg");
@@ -806,6 +805,10 @@ img {
     border 250ms var(--time-function);
 }
 
+.user-policy:focus + .modal-icon-policy::before {
+  outline: 1px solid #000;
+}
+
 .user-policy:checked + .modal-icon-policy::before {
   background-color: var(--accent-color);
   background-image: url("../images/main/svg/term-on.svg");
@@ -814,7 +817,6 @@ img {
   background-origin: border-box;
   border: 2px solid var(--accent-color);
   border-radius: 2px;
-  outline: none;
   fill: #fff;
 }
 

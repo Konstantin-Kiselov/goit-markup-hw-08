@@ -440,33 +440,36 @@
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="modal-form" autocomplete="off">
                 
-                <label class="modal-label" for="user-name">Имя</label>
-                <div class="modal-icon-wrapper">
-                    <input class="modal-input" type="text" name="name" id="user-name" required minlength="2">
+                <label class="modal-label">Имя
+                <span class="modal-icon-wrapper">
+                    <input class="modal-input" type="text" name="name" required minlength="2">
                     <svg class="input-icon" width="18px" height="18px">
                         <use href="./images/main/svg/icons.svg#name"></use>
                     </svg>
-                
-                </div>
+                </span>
+                </label>
 
-                <label class="modal-label" for="user-tel">Телефон</label>
-                <div class="modal-icon-wrapper">
-                    <input class="modal-input" type="tel" name="tel" id="user-tel" required>
+                <label class="modal-label">Телефон
+                <span class="modal-icon-wrapper">
+                    <input class="modal-input" type="tel" name="tel" required>
                     <svg class="input-icon" width="18px" height="18px">
                         <use href="./images/main/svg/icons.svg#tel"></use>
                     </svg>
-                </div>
+                </span>
+                </label>
 
-                <label class="modal-label" for="user-email">Почта</label>
-                <div class="modal-icon-wrapper">
-                    <input class="modal-input" type="email" name="email" id="user-email" autocomplete="on">
+                <label class="modal-label">Почта
+                <span class="modal-icon-wrapper">
+                    <input class="modal-input" type="email" name="email" autocomplete="on">
                     <svg class="input-icon" width="18px" height="18px">
                         <use href="./images/main/svg/icons.svg#email"></use>
                     </svg>
-                </div>
+                </span>
+                </label>
 
-                <label class="modal-label" for="comment">Комментарий</label>
-                <textarea class="modal-area" name="comment" id="comment" rows="6" placeholder="Введите текст"></textarea>
+                <label class="modal-label">Комментарий
+                    <textarea class="modal-area" name="comment" rows="6" placeholder="Введите текст"></textarea>
+                </label>
 
                 <input type="checkbox" name="policy" class="user-policy visually-hidden" id="policy">
                 <label class="modal-icon-policy" for="policy">Соглашаюсь с рассылкой и принимаю&nbsp;
