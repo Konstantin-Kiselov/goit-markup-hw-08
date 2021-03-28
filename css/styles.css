@@ -795,21 +795,19 @@ img {
   border: none;
   cursor: pointer;
   margin-right: 8px;
-  background-image: url("../images/main/svg/terms-off.svg");
+  background-image: url("../images/main/svg/term-off.svg");
+  background-size: contain;
 }
 
 .user-policy:checked + .modal-icon-policy::before {
   background-color: var(--accent-color);
-  background-image: url("../images/main/svg/on.svg");
+  background-image: url("../images/main/svg/term-on.svg");
   background-position: center;
+  background-size: contain;
   border: none;
   border-radius: 2px;
   outline: none;
   fill: #fff;
-}
-
-.user-policy:focus + .modal-icon-policy::before {
-  border: none;
 }
 
 .modal-btn {
