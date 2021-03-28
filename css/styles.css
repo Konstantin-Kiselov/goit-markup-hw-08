@@ -739,9 +739,9 @@ img {
 
 .input-icon {
   position: absolute;
-  top: center;
+  top: 50%;
   left: 15px;
-  transform: translateY(50%);
+  transform: translateY(-50%);
 
   transition: fill 250ms var(--time-function);
 }
@@ -796,14 +796,15 @@ img {
   cursor: pointer;
   margin-right: 8px;
   background-image: url("../images/main/svg/term-off.svg");
-  background-size: contain;
+  background-size: cover;
+  transition: background-color 250ms var(--time-function);
 }
 
 .user-policy:checked + .modal-icon-policy::before {
   background-color: var(--accent-color);
   background-image: url("../images/main/svg/term-on.svg");
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   border: none;
   border-radius: 2px;
   outline: none;
