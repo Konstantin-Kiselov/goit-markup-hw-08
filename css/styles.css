@@ -805,13 +805,9 @@ img {
     border 250ms var(--time-function);
 }
 
-.user-policy:focus + .modal-icon-policy::before {
-  box-shadow: 0 0 0 1px var(--title-text-color);
-  border-radius: 2px;
-}
-
+.user-policy:focus + .modal-icon-policy::before,
 .user-policy:checked:focus + .modal-icon-policy::before {
-  box-shadow: 0 0 0 1px var(--accent-color);
+  box-shadow: 0 0 0 1px var(--title-text-color);
   border-radius: 2px;
 }
 
