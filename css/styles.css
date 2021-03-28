@@ -845,6 +845,7 @@ img {
 
 .modal-close-icon {
   fill: #000000;
+  transition: fill 250ms var(--time-function);
 }
 
 .modal-close-btn:hover .modal-close-icon,
