@@ -1,20 +1,20 @@
-.logo-black,
-.logo-white,
-.logo-web {
+.logo--black,
+.logo--white,
+.logo__web {
   font-family: var(--secondary-font);
   font-weight: 700;
   font-size: 26px;
   line-height: 1.19;
 }
-.logo-black {
+.logo--black {
   color: #000000;
   margin-right: 93px;
 }
 
-.logo-white {
+.logo--white {
   color: var(--white-color);
 }
 
-.logo-web {
+.logo__web {
   color: var(--accent-color);
 }

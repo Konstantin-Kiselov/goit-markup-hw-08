@@ -24,8 +24,10 @@
   color: var(--address-color);
 }
 
-.address-item:not(:last-child) {
-  margin-bottom: 9px;
+.address-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .social-footer {
@@ -55,12 +57,12 @@
   color: #fff;
 
   transition: background-color 250ms var(--time-function);
-}
 
-.social-footer-link:hover,
-.social-footer-link:focus {
-  background-color: var(--accent-color);
-  color: #fff;
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: #fff;
+  }
 }
 
 .subscriber {
@@ -82,9 +84,6 @@
 
   font-size: 16px;
   line-height: 1.25;
-  /* display: flex; */
-  /* align-items: center; */
-
   color: rgba(255, 255, 255, 0.6);
 }
 

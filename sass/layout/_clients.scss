@@ -22,12 +22,12 @@
 
   transition: color 250ms var(--time-function),
     border-color 250ms var(--time-function);
-}
 
-.clients-link:hover,
-.clients-link:focus {
-  color: var(--accent-color);
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }
 }
 
 .clients-icon {
