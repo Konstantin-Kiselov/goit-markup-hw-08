@@ -1,3 +1,3 @@
-# goit-markup-hw-06
-Homework #6
-# https://konstantin-kiselov.github.io/goit-markup-hw-06/
+# goit-markup-hw-07
+Homework #7
+# https://konstantin-kiselov.github.io/goit-markup-hw-07/
