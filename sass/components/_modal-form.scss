@@ -1,9 +1,9 @@
-.modal-form {
+.modal__form {
   display: flex;
   flex-direction: column;
 }
 
-.modal-title {
+.modal__title {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
@@ -12,13 +12,20 @@
   color: var(--title-text-color);
 }
 
-.modal-label {
+.form__label {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
 }
 
-.modal-input {
+.form__icon-wrapper {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 4px;
+}
+
+.form__input {
   outline: none;
   padding: 11px 12px 11px 42px;
   width: 100%;
@@ -32,7 +39,7 @@
   }
 }
 
-.input-icon {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -40,12 +47,12 @@
 
   transition: fill 250ms var(--time-function);
 
-  .modal-input:focus + & {
+  .form__input:focus + & {
     fill: var(--accent-color);
   }
 }
 
-.modal-area {
+.form__area {
   outline: none;
   resize: none;
   width: 100%;
@@ -77,7 +84,7 @@
   }
 }
 
-.modal-icon-policy {
+.form__label_policy {
   font-size: 14px;
   line-height: 1.71;
   display: flex;
@@ -117,7 +124,7 @@
   }
 }
 
-.modal-btn {
+.form__btn {
   align-self: center;
   padding: 10px 55px 10px 56px;
   background: var(--accent-color);
@@ -140,6 +147,6 @@
   }
 }
 
-.terms-agreements {
+.form__link_terms {
   color: var(--accent-color);
 }

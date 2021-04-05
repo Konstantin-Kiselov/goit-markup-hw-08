@@ -1,20 +1,24 @@
-.nav__list {
-  display: flex;
-  align-items: center;
-}
+.nav {
+  margin-left: 93px;
 
-.nav__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+  &__list {
+    display: flex;
+    align-items: center;
   }
-}
 
-.nav__link {
-  color: var(--title-text-color);
+  &__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
+  &__link {
+    color: var(--title-text-color);
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
   }
 }
 

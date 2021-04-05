@@ -18,14 +18,7 @@
   }
 }
 
-.modal-icon-wrapper {
-  position: relative;
-  display: block;
-  margin-bottom: 10px;
-  margin-top: 4px;
-}
-
-.modal-close-btn {
+.modal__btn {
   position: absolute;
   top: 8px;
   right: 8px;
@@ -40,12 +33,12 @@
   cursor: pointer;
 }
 
-.modal-close-icon {
+.modal__icon {
   fill: #000000;
   transition: fill 250ms var(--time-function);
 
-  .modal-close-btn:hover &,
-  .modal-close-btn:focus & {
+  .modal__btn:hover &,
+  .modal__btn:focus & {
     fill: var(--accent-color);
   }
 }

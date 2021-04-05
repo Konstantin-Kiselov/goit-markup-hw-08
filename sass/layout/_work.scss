@@ -1,33 +1,33 @@
 .work {
   padding-bottom: var(--padding-section);
-}
 
-.work-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin: -15px;
-}
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
 
-.work-list-item {
-  margin: 15px;
-  flex-basis: calc((100% / 3 - 30px));
-}
+  &__item {
+    margin: 15px;
+    flex-basis: calc((100% / 3 - 30px));
+  }
 
-.work-thumb {
-  position: relative;
-}
+  &__thumb {
+    position: relative;
+  }
 
-.work-thumb-title {
-  position: absolute;
-  bottom: 0;
-  display: block;
-  width: 100%;
-  padding: 27px 0px;
-  text-align: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.17;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: rgba(47, 48, 58, 0.8);
+  &__title {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 27px 0px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.17;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
 }
