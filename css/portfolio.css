@@ -142,6 +142,18 @@ img {
   margin-bottom: 50px;
 }
 
+.social__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .social__link {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -544,6 +556,98 @@ img {
   padding: 2px 0;
   background-color: var(--accent-color);
   border-radius: 2px;
+}
+
+.work {
+  padding-bottom: var(--padding-section);
+}
+
+.work__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+.work__item {
+  margin: 15px;
+  -ms-flex-preferred-size: calc((100% / 3 - 30px));
+      flex-basis: calc((100% / 3 - 30px));
+}
+
+.work__thumb {
+  position: relative;
+}
+
+.work__title {
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  padding: 27px 0px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.team {
+  padding-top: var(--padding-section);
+  padding-bottom: var(--padding-section);
+  background-color: #f5f4fa;
+}
+
+.team__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: -15px;
+}
+
+.team__item {
+  margin: 15px;
+  -ms-flex-preferred-size: calc(100% / 4 - 30px);
+      flex-basis: calc(100% / 4 - 30px);
+  border-radius: 0px 0px 4px 4px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.team__img {
+  max-width: 100%;
+}
+
+.team__container {
+  max-width: 100%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #ffffff;
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team__name, .team__pos {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+.team__name {
+  font-weight: 500;
+  color: var(--title-text-color);
+  margin-bottom: 10px;
+}
+
+.team__pos {
+  margin-bottom: 16px;
 }
 
 .projects {
