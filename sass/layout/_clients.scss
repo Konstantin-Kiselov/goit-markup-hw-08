@@ -1,19 +1,24 @@
 .clients {
-  padding-top: var(--padding-section);
-  padding-bottom: var(--padding-section);
+  padding-top: var(--padding-section-mobile);
+  padding-bottom: var(--padding-section-mobile);
 
   &__list {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
+    margin: -15px;
+    // align-items: center;
+    // justify-content: space-between;
+  }
+
+  &__item {
+    width: calc((100% / 2) - 30px);
+    margin: 15px;
   }
 
   &__link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 170px;
     height: 90px;
     border: 1px solid #afb1b8;
     border-radius: 4px;
