@@ -1,83 +1,83 @@
-.nav {
-  margin-left: 93px;
+// .nav {
+//   margin-left: 93px;
 
-  &__list {
-    display: flex;
-    align-items: center;
-  }
+//   &__list {
+//     display: flex;
+//     align-items: center;
+//   }
 
-  &__item {
-    &:not(:last-child) {
-      margin-right: 50px;
-    }
-  }
+//   &__item {
+//     &:not(:last-child) {
+//       margin-right: 50px;
+//     }
+//   }
 
-  &__link {
-    color: var(--title-text-color);
+//   &__link {
+//     color: var(--title-text-color);
 
-    &:hover,
-    &:focus {
-      color: var(--accent-color);
-    }
-  }
-}
+//     &:hover,
+//     &:focus {
+//       color: var(--accent-color);
+//     }
+//   }
+// }
 
-.nav__link,
-.contact__link {
-  display: flex;
-  align-items: center;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.17;
-  letter-spacing: 0.02em;
-  transition: color 250ms var(--time-function);
-}
+// .nav__link,
+// .contact__link {
+//   display: flex;
+//   align-items: center;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.17;
+//   letter-spacing: 0.02em;
+//   transition: color 250ms var(--time-function);
+// }
 
-.contact__list {
-  display: flex;
-  margin-left: auto;
-}
+// .contact__list {
+//   display: flex;
+//   margin-left: auto;
+// }
 
-.contact__item {
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
+// .contact__item {
+//   &:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
 
-.contact__link {
-  color: var(--primary-text-color);
+// .contact__link {
+//   color: var(--primary-text-color);
 
-  &:hover,
-  &:focus {
-    color: var(--accent-color);
-  }
-}
+//   &:hover,
+//   &:focus {
+//     color: var(--accent-color);
+//   }
+// }
 
-.contact__icon--email {
-  width: 16px;
-  height: 12px;
-  fill: currentColor;
-  margin-right: 10px;
-}
+// .contact__icon--email {
+//   width: 16px;
+//   height: 12px;
+//   fill: currentColor;
+//   margin-right: 10px;
+// }
 
-.contact__icon--tel {
-  width: 10px;
-  height: 16px;
-  fill: currentColor;
-  margin-right: 10px;
-}
+// .contact__icon--tel {
+//   width: 10px;
+//   height: 16px;
+//   fill: currentColor;
+//   margin-right: 10px;
+// }
 
-.current {
-  position: relative;
-  color: var(--accent-color);
+// .current {
+//   position: relative;
+//   color: var(--accent-color);
 
-  &::after {
-    position: absolute;
-    top: 45px;
-    content: "";
-    width: 100%;
-    padding: 2px 0;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-  }
-}
+//   &::after {
+//     position: absolute;
+//     top: 45px;
+//     content: "";
+//     width: 100%;
+//     padding: 2px 0;
+//     background-color: var(--accent-color);
+//     border-radius: 2px;
+//   }
+// }
