@@ -165,7 +165,7 @@
         </section>
 
         <!-- чем мы занимаемся-->
-        <!-- <section class="work">
+        <section class="work">
             <div class="container">
                     <h2 class="section-title">Чем мы занимаемся</h2>
                 <ul class="work__list list">
@@ -189,7 +189,7 @@
                     </li>
                 </ul> 
             </div>
-        </section> -->
+        </section>
 
         <!-- наша команда -->
         <section class="team">
@@ -197,10 +197,13 @@
                     <h2 class="section-title">Наша команда</h2>
                 <ul class="team__list list">
                     <li class="team__item">
-
-                        <img class="team__img" src="images/komanda/igor.jpg" alt="Фото Игоря">
-                        
-                        <div class="team__container">
+                        <picture>
+                            <source srcset="./images/main/team/igor-desktop.jpg 1x, ./images/main/team/igor-desktop@2x.jpg 2x" media="min-width:1200px">
+                            <source srcset="./images/main/team/igor-tablet.jpg 1x, ./images/main/team/igor-tablet@2x.jpg 2x" media="min-width:768px">
+                            <source srcset="./images/main/team/igor.jpg 1x, ./images/main/team/igor@2x.jpg 2x" media="min-width:480px">
+                            <img class="team__img" src="./images/main/team/igor.jpg" alt="Фото Игоря">
+                        </picture>
+                        <div class="team__thumb">
                             <h3 class="team__name">Игорь Демьяненко</h3>
                             <p class="team__pos" lang="en">Product Designer</p>
                             <ul class="social__list list">
@@ -240,7 +243,7 @@
                                             
                         <img class="team__img" src="images/komanda/olga.jpg" alt="Фото Ольги">
                   
-                        <div class="team__container">
+                        <div class="team__thumb">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__pos" lang="en">Frontend Developer</p>
                             <ul class="social__list list">
@@ -280,7 +283,7 @@
                       
                         <img class="team__img" src="images/komanda/nikolai.jpg" alt="Фото Николая">
                       
-                        <div class="team__container">
+                        <div class="team__thumb">
                                 <h3 class="team__name">Николай Тарасов</h3>
                             <p class="team__pos"  lang="en">Marketing</p>
                             <ul class="social__list list">
@@ -318,8 +321,9 @@
 
                     <li class="team__item">
                         
-                            <img class="team__img" src="images/komanda/mihail.jpg" alt="Фото Михаила">
-                        <div class="team__container">
+                        <img class="team__img" src="images/komanda/mihail.jpg" alt="Фото Михаила">
+                        
+                        <div class="team__thumb">
                                 <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__pos" lang="en">UI Designer</p>   
                             <ul class="social__list list">

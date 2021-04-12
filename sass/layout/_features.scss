@@ -23,6 +23,7 @@
     border-radius: 4px;
     margin-bottom: 30px;
   }
+
   &__title {
     text-align: center;
     font-weight: 700;
@@ -38,6 +39,26 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .features__item {
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  .features__title {
+    text-align: start;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+  }
+
+  .features__item {
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
 // .features {
 
 //   &__item {

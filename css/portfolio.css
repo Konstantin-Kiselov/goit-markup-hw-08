@@ -171,17 +171,21 @@ img {
           flex-direction: column;
   padding: 48px 40px;
   background-color: var(--primary-bg-color);
+  opacity: 0;
+  pointer-events: none;
   -webkit-transform: translate(-50%, -100%);
           transform: translate(-50%, -100%);
-  -webkit-transition: -webkit-transform 250ms var(--time-function);
-  transition: -webkit-transform 250ms var(--time-function);
-  transition: transform 250ms var(--time-function);
-  transition: transform 250ms var(--time-function), -webkit-transform 250ms var(--time-function);
+  -webkit-transition: opacity 250ms var(--time-function), -webkit-transform 250ms var(--time-function);
+  transition: opacity 250ms var(--time-function), -webkit-transform 250ms var(--time-function);
+  transition: transform 250ms var(--time-function), opacity 250ms var(--time-function);
+  transition: transform 250ms var(--time-function), opacity 250ms var(--time-function), -webkit-transform 250ms var(--time-function);
 }
 
 .mobile-menu.is-open {
   -webkit-transform: translate(-50%, 0);
           transform: translate(-50%, 0);
+  opacity: 1;
+  pointer-events: all;
 }
 
 .mobile-menu__button {
@@ -650,7 +654,8 @@ img {
 }
 
 .nav {
-  margin-left: 93px;
+  margin-left: 88px;
+  margin-right: auto;
 }
 
 .nav__list {
@@ -690,15 +695,12 @@ img {
   transition: color 250ms var(--time-function);
 }
 
-.contact__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
+.contact__link {
+  font-size: 12px;
 }
 
 .contact__item:not(:last-child) {
-  margin-right: 50px;
+  margin-bottom: 10px;
 }
 
 .contact__link {
@@ -709,16 +711,8 @@ img {
   color: var(--accent-color);
 }
 
-.contact__icon--email {
-  width: 16px;
-  height: 12px;
-  fill: currentColor;
-  margin-right: 10px;
-}
-
+.contact__icon--email,
 .contact__icon--tel {
-  width: 10px;
-  height: 16px;
   fill: currentColor;
   margin-right: 10px;
 }
@@ -730,12 +724,34 @@ img {
 
 .current::after {
   position: absolute;
-  top: 45px;
+  bottom: -35px;
   content: "";
   width: 100%;
   padding: 2px 0;
   background-color: var(--accent-color);
   border-radius: 2px;
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    margin-left: 93px;
+  }
+  .contact__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: auto;
+  }
+  .contact__item:not(:last-child) {
+    margin-right: 50px;
+    margin-bottom: 0px;
+  }
+  .current::after {
+    bottom: -30px;
+  }
 }
 
 @media screen and (max-width: 767px) {
