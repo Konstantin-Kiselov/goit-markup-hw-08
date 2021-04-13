@@ -52,6 +52,11 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .team {
+    padding-top: var(--padding-section);
+    padding-bottom: var(--padding-section);
+  }
+
   .team__item {
     flex-basis: calc(100% / 4 - 30px);
   }

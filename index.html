@@ -198,9 +198,12 @@
                 <ul class="team__list list">
                     <li class="team__item">
                         <picture>
-                            <source srcset="./images/main/team/igor-desktop.jpg 1x, ./images/main/team/igor-desktop@2x.jpg 2x" media="min-width:1200px">
-                            <source srcset="./images/main/team/igor-tablet.jpg 1x, ./images/main/team/igor-tablet@2x.jpg 2x" media="min-width:768px">
-                            <source srcset="./images/main/team/igor.jpg 1x, ./images/main/team/igor@2x.jpg 2x" media="min-width:480px">
+                            <source srcset="./images/main/team/igor-desktop.jpg 1x, ./images/main/team/igor-desktop@2x.jpg 2x" 
+                                media="(min-width:1200px)">
+                            <source srcset="./images/main/team/igor-tablet.jpg 1x, ./images/main/team/igor-tablet@2x.jpg 2x" 
+                                media="(min-width:768px)">
+                            <source srcset="./images/main/team/igor.jpg 1x, ./images/main/team/igor@2x.jpg 2x" 
+                                media="(min-width:480px)">
                             <img class="team__img" src="./images/main/team/igor.jpg" alt="Фото Игоря">
                         </picture>
                         <div class="team__thumb">
@@ -240,9 +243,15 @@
                     </li>
 
                     <li class="team__item">
-                                            
-                        <img class="team__img" src="images/komanda/olga.jpg" alt="Фото Ольги">
-                  
+                        <picture>
+                            <source srcset="./images/main/team/olya-desktop.jpg 1x, ./images/main/team/olya-desktop@2x.jpg 2x" 
+                                media="(min-width:1200px)">
+                            <source srcset="./images/main/team/olya-tablet.jpg 1x, ./images/main/team/olya-tablet@2x.jpg 2x" 
+                                media="(min-width:768px)">
+                            <source srcset="./images/main/team/olya.jpg 1x, ./images/main/team/olya@2x.jpg 2x" 
+                                media="(min-width:480px)">                    
+                            <img class="team__img" src="./images/main/team/olya.jpg" alt="Фото Ольги">
+                        </picture>
                         <div class="team__thumb">
                             <h3 class="team__name">Ольга Репина</h3>
                             <p class="team__pos" lang="en">Frontend Developer</p>
@@ -280,8 +289,15 @@
                     </li>
 
                     <li class="team__item">
-                      
-                        <img class="team__img" src="images/komanda/nikolai.jpg" alt="Фото Николая">
+                        <picture>
+                            <source srcset="./images/main/team/nikolai-desktop.jpg 1x, ./images/main/team/nikolai-desktop@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/main/team/nikolai-tablet.jpg 1x, ./images/main/team/nikolai-tablet@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/main/team/nikolai.jpg 1x, ./images/main/team/nikolai@2x.jpg 2x" 
+                                media="(min-width:480px)">
+                            <img class="team__img" src="./images/main/team/nikolai.jpg" alt="Фото Николая">
+                        </picture>
                       
                         <div class="team__thumb">
                                 <h3 class="team__name">Николай Тарасов</h3>
@@ -320,9 +336,15 @@
                     </li>
 
                     <li class="team__item">
-                        
-                        <img class="team__img" src="images/komanda/mihail.jpg" alt="Фото Михаила">
-                        
+                        <picture>
+                            <source srcset="./images/main/team/mihail-desktop.jpg 1x, ./images/main/team/mihail-desktop@2x.jpg 2x"
+                                media="(min-width:1200px)">
+                            <source srcset="./images/main/team/mihail-tablet.jpg 1x, ./images/main/team/mihail-tablet@2x.jpg 2x"
+                                media="(min-width:768px)">
+                            <source srcset="./images/main/team/mihail.jpg 1x, ./images/main/team/mihail@2x.jpg 2x" 
+                                media="(min-width:480px)">
+                            <img class="team__img" src="./images/main/team/mihail.jpg" alt="Фото Михаила">
+                        </picture>
                         <div class="team__thumb">
                                 <h3 class="team__name">Михаил Ермаков</h3>
                             <p class="team__pos" lang="en">UI Designer</p>   
@@ -415,12 +437,13 @@
     </main>
 
     <!-- футер сайта -->
-    <!-- <footer class="footer">
+    <footer class="footer">
            <div class="footer__wrapper container">
-                <div class="adress__wrapper">
-                    <a class="logo logo_white link" href="index.html">
-                        <span class="logo__text">Web</span>Studio
-                    </a>
+            <div class="address__thumb">
+                <a class="logo logo_white link" href="index.html">
+                    <span class="logo__text">Web</span>Studio
+                </a>
+                
                     <address class="address">
                         <ul class="address__list list">
                             <li class="address__item">
@@ -440,7 +463,7 @@
                 </div>
 
                 <div class="social__wrapper">
-                    <h2 class="social__title features__title">присоединяйтесь</h2>
+                    <h2 class="footer__title">присоединяйтесь</h2>
                     <ul class="social__list list">
                         <li class="social__item">
                             <a href="" class="social__link social__link_footer link">
@@ -473,20 +496,22 @@
                     </ul>
                 </div>
                 <div class="subscriber">
-                    <h2 class="social__title">Подпишитесь на рассылку</h2>
+                    <h2 class="footer__title">Подпишитесь на рассылку</h2>
                     <form class="subscriber__form">
                         <label>
                             <input name="email" class="subscriber__input" type="email" placeholder="E-mail" required>
                         </label>
-                        <button class="subscriber__btn" type="submit">Подписаться
+                        <button class="subscriber__btn" type="submit">
+                            <span class="subscriber__btn-label">Подписаться
                             <svg class="subscriber__icon" width="24px" height="24px">
                                 <use href="./images/main/svg/icons.svg#send"></use>
                             </svg>
+                            </span>
                         </button>
                     </form>
                 </div>
            </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
        <div class="modal">

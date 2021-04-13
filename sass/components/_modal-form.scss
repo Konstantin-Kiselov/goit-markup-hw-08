@@ -85,8 +85,8 @@
 }
 
 .form__label_policy {
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   display: flex;
   align-items: center;
   margin-bottom: 30px;
@@ -149,4 +149,11 @@
 
 .form__link_terms {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .form__label_policy {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
