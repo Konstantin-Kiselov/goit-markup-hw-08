@@ -52,7 +52,7 @@
 
   &__input {
     display: block;
-    width: 358px;
+    width: 290px;
     padding: 14px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -91,7 +91,17 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .subscriber__input {
+    width: 450px;
+  }
+}
+
 @media screen and (min-width: 768px) {
+  .social__wrapper {
+    margin-top: 0;
+  }
+
   .footer__wrapper {
     flex-direction: row;
     flex-wrap: wrap;
@@ -116,13 +126,16 @@
   }
 
   .subscriber {
+    margin-top: 0;
     margin-left: auto;
+
     &__form {
       display: flex;
       align-items: center;
     }
 
     &__input {
+      width: 358px;
       margin-bottom: 0;
     }
 
